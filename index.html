@@ -16,11 +16,23 @@
     <div class="container">
       <h1>Devine le nombre</h1>
       <p>Le nombre que tu dois trouver est compris entre 0 et 20.</p>
+      <div id="answer"></div>
+
       <div class="input-group">
-        <input type="text" id="numberInput" placeholder="Écris un nombre" />
+        <input
+          type="number"
+          min="0"
+          max="20"
+          id="numberInput"
+          placeholder="Écris un nombre"
+        />
         <button id="addNumberBtn">Vérifier</button>
       </div>
+      <div id="essais"></div>
       <ul id="numberList"></ul>
+      <div id="newGame">
+        <button>Rejouer</button>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

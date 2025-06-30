@@ -11,7 +11,7 @@
 }
 
 body {
-  background-image: url(IMAGES/numbers.jpg);
+  background-image: url(./IMAGES/numbers.jpg);
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -78,4 +78,52 @@ input {
 
 #addNumberBtn:hover {
   background: rgb(63, 182, 71);
+}
+ul {
+  max-height: 200px;
+  overflow: auto;
+  margin-top: 5px;
+}
+
+li {
+  margin-top: 5px;
+  text-align: center;
+  display: flex;
+  color: rgb(90, 255, 101);
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(90, 255, 101);
+  border-radius: 10px;
+  justify-content: space-between;
+  padding: 8px;
+  text-decoration: line-through;
+  text-decoration-color: rgb(90, 255, 101);
+}
+
+#answer {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#essais {
+  color: rgb(90, 255, 101);
+  margin-top: 10px;
+}
+
+#newGame {
+  display: none;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#newGame button {
+  width: 30%;
+  padding: 0.5rem;
+  border: none;
+  height: 30px;
+  background: rgb(90, 255, 101);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
 }
